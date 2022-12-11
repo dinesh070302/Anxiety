@@ -254,58 +254,30 @@ if(bro<22){
                     
                     
                     <div className='lowanxiety'>
-                    <h2><center>Low Anxiety</center></h2>
+                    <h2><center>Low Level Anxiety</center></h2>
+                    <h3>You're anxious about nothing. Start to make these a daily practice:</h3>
                     <p>
-                    A healthful diet may help prevent depression and boost mental well-being. dietary interventions do play a role in treating depression.
-                    Foods that would help are
-                    fresh fruits and vegetables, green tea, soybean products, healthful oils, such as olive oil, whole grains, fish.
-                    At the same time, people should limit their intake of the following:
-                    red meat and meat products, baked goods,trans fats,	sugary desserts and sodas.
-                    Fresh fruits and vegetables provide antioxidants. These helps to protect the body from oxidative stress and cell damage.
-                    Processed foods may adversely affect the gut microbiota, which could increase the risk of depression,
-                    According to an, there is a strong link between depression and insomnia. A lack of sleep may worsen symptoms of depression, and it is also a common symptom.
-                    <br></br>
-                    <br></br>
-                    Here are some tips  that people can try to improve their sleep naturally:
-                    <br></br>
-                    •	Go to bed and get up at the same time each day, including weekends.
-                    <br></br>
-                    •	Try to ensure the room is quiet, dark, and of a comfortable temperature.
-                    <br></br>
-                    •	Avoid large meals, caffeine, and alcohol before sleeping.
-                    <br></br>
-                    •	Do physical exercise during the day.
-                    <br></br>
-                    •	Remove electronic equipment from the sleeping area and switch off 30 minutes before bedtime.
-                    <br></br>
-                    •	Get up again if you do not fall asleep within 20 minutes. Read or find some other distraction for a while,   then try again.
-                    <br></br>
-                    •	Follow a healthful diet.
-                    <br></br>
-                    •	Avoid drinking too much fluid too close to bedtime.
-                    <br></br>
-                    •	Limit exposure to bright light in the evening.
-                    <br></br>
-                    • Include doing breathing or relaxation exercises before sleeping. The 4-7-8 breathing technique can also calm anxiety.
-                    <br></br>
-                    <br></br>
-                    Alcohol control:
-                    The use of alcohol and some recreational drugs can increase the risk of depression and make symptoms worse.
-                    Various factors can trigger symptoms of stress and depression, and these will vary between individuals. It may be possible to avoid or reduce exposure to some of these triggers.
-                    Triggers that a person may be able to avoid include:
-                    <br></br>
-                    •	Exposure to news, some movies, and other media. 
-                    <br></br>
-                    •	Using alcohol or drugs, unless the person has a related disorder
-                    <br></br>
-                    •	Having too little sleep due to late nights
-                    <br></br>
-                    If avoiding triggers is not an option, it may be possible to reduce exposure, for example, by deciding on one specific time of day to check emails or watch the news.
-                    </p>
+•	Learn to deep breathe when you feel anxious.
+<br />
+<br />
+•	Meditate in the morning and evening (yes, you can meditate).
+<br />
+<br />
+•	Get great sleep.
+<br />
+<br />
+•	Avoid alcohol.
+<br />
+<br />
+•	Schedule time to relax.
+<br />
+<br />
+•	Don't take pressure. 
+</p>
                     </div>
                     <div className='mawa'>
                     
-                       <button type="submit" onClick={resetQuiz} ><center>Attempt Again!!!</center></button>
+                       <button type="submit" onClick={resetQuiz}  >Attempt Again!!!</button>
                        
                     </div>
                 </div>
@@ -342,19 +314,38 @@ else if(bro>=22 && bro <= 35){
         <div className='app'>
             {showScore ? (
                 <div className='score-section'>
-                    <div className='text1'>You have scored {score} </div>
+                    <h2><div className='text1'>You have scored {score} </div></h2>
                     <>
-                       <button type="submit" onClick={resetQuiz}>Attempt again!!</button>
+                       
                        
                     </>
-                    <p className='text2'>Moderate anxiety</p>
-                    <p>Medium Level:
-                    • Exercise: Both aerobic (such as jogging or walking) and anaerobic (such as weightlifting) exercise might help lessen the symptoms of depression.
-                    • Relaxation training: A depressed person can learn to relax freely by deliberately tensing and relaxing different muscle groups.
-                    •Light treatment: Certain types of depression, such as SAD, can be treated by exposing the eyes to bright, full-spectrum light that simulates natural outside light, especially in the morning (seasonal affective disorder)
-                    •Self-help books based on cognitive behavioural therapy (CBT): Self-help books based on CBT can help a person with depression work through some of their symptoms.
-                    •Electronic treatment. Self-help programs offered online have also been shown to be successful in treating depression. When people follow the steps on the CBT website Mood Gym, which has undergone scientific evaluation, they can find relief from the symptoms of depression. The website instructs users on how to think in ways that can shield them from despair.
+                    <h2><p className='text2'>Moderate anxiety</p></h2>
+
+                    <p className='midbro'>
+                    <h3>Psychotherapy</h3>
+Psychotherapy or “talk therapy” can help people with anxiety disorders. To be effective, psychotherapy must be directed at your specific anxieties and tailored to your needs.
+<br /><br />
+<h3>Stress Management Techniques</h3>
+Stress management techniques, such as exercise, mindfulness, and meditation, also can reduce anxiety symptoms and enhance the effects of psychotherapy. You can learn more about how these techniques benefit your treatment by talking with a health care provider
+<h3>Cognitive Behavioral Therapy</h3>
+<p>
+Cognitive behavioral therapy (CBT), which involves learning how to lower anxiety and face distressing situations.A CBT technique used to treat anxiety problems is exposure treatment. In order to help patients engage in activities they have been avoiding, exposure therapy focuses on facing the concerns at the root of an anxiety condition
+<br /><br />
+•Step One - Make A List.
+<br /><br />
+•Step Two - Record Unproductive Thoughts.
+<br /><br />
+•Step Three - Create Replacement Thoughts.
+<br /><br />
+•Step Four - Read Your List Often.
+<br /><br />
+•Step Five - Notice And Replace.
 </p>
+<h3>Acceptance and Commitment therapy</h3>
+<p>Acceptance and commitment therapy is an additional alternative for treating some anxiety problems (ACT). In contrast to CBT, ACT approaches negative ideas differently. In order to lessen discomfort and anxiety, it employs techniques including goal-setting and mindfulness. Because ACT is a more recent type of psychotherapy than CBT, there are less studies evaluating its efficacy.</p>
+
+</p>
+<button type="submit" onClick={resetQuiz}>Attempt again!!</button>
                 </div>
                 
             )
@@ -369,7 +360,6 @@ else if(bro>=22 && bro <= 35){
                              {Questionbank[currentQuestion].Question}
                             </div>
                         </div>
-
                         <div className='answer-section'>
                           {Questionbank[currentQuestion].Answers.map((answer)=>
                           (
@@ -387,13 +377,23 @@ else {
     return (
         <div className='app'>
             {showScore ? (
-                <div className='score-section'>
-                    You have scored {score} 
-                    <>
+                <div className='score-section severe'>
+                    <h2>You have scored {score} </h2>
+                    
+                    <h2 className='helllll'><p>Potentially concerning levels of anxiety</p></h2>
+                    <p>
+                        <h3>Choosing the Right Medication</h3>
+                        <p>Some types of drugs may work better for specific types of anxiety disorders, so people should work closely with a health care provider to identify which medication is best for them. Certain substances such as caffeine, some over-the-counter cold medicines, illicit drugs, and herbal supplements may aggravate the symptoms of anxiety disorders or interact with prescribed medication. People should talk with a health care provider, so they can learn which substances are safe and which to avoid.</p>
+
+                    </p>
+                    <h3>Support Groups</h3>
+                    <p>
+                    Some people with anxiety disorders might benefit from joining a self-help or support group and sharing their problems and achievements with others. Support groups are available both in person and online. However, any advice you receive from a support group member should be used cautiously and does not replace treatment recommendations from a health care provider.
+                    </p>
+                    <div>
                        <button type="submit" onClick={resetQuiz}>Attempt again!!</button>
                        
-                    </>
-                    <p>Potentially concerning levels of anxiety</p>
+                    </div>
                 </div>
                 
             )
